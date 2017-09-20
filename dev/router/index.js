@@ -5,6 +5,8 @@ import Home from '../pages/Home'
 import Charge from '../pages/Charge'
 import Shop from '../pages/Mall'
 import Login from '../pages/Login'
+import Register from '../pages/user/Register'
+import FindPassword from '../pages/user/FindPassword'
 
 Vue.use(VueRouter)
 
@@ -23,10 +25,18 @@ export default new VueRouter({
             name:'Mall',
             component:Shop
         },{
-        path:'/login',
-        name:'Login',
-        component:Login
-      }
+            path:'/login',
+            name:'Login',
+            component:Login
+        },{
+            path:'/user/register',
+            name:'Register',
+            component:Register
+        },{
+            path:'/user/findpassword',
+            name:'FindPassword',
+            component:FindPassword
+        }
     ]
 })
 

@@ -19,8 +19,13 @@
         <button class="login-unuser">游客进入</button>
       </div>
       <p class="login-tips">
-        <span class="login-find">找回密码</span>
-        <span class="login-register txt-fr">快速注册</span>
+        <router-link to="/user/findpassword">
+          <span class="login-find">找回密码</span>
+        </router-link>
+        <router-link to="/user/register">
+          <span class="login-register txt-fr">快速注册</span>
+        </router-link>
+
       </p>
       <count-list :count-list="countListData"
                   :count-list-show="showFlag"

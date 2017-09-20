@@ -1,5 +1,5 @@
 /*created by szatpig on 2017/8/24*/
-//px2rem\(-?\d+px\);
+//px2rem\((-?\d+px)\);
 //$1px
 html,body{
   height: 100%;
@@ -65,6 +65,9 @@ html,body{
       margin-top: 32px;
       font-size: 26px;
       color: #6f6f6f;
+      span{
+        color: #6f6f6f;
+      }
     }
     .count-list-btn{
       position: absolute;
